@@ -1,17 +1,8 @@
 name: hello
-on: push:
-job:
+on: push
+jobs:
   hello:
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Hello, world!"
-      - name: Hello world 2
-        run: echo "Hello, world 2!"
-      - name: Hello world 3
-        run: echo "Hello, world 3!"
-      - name: Hello world 4
-        run: echo "Hello, world 4!"
-      - name: Hello world 5
-        run: echo "Hello, world 5!"
+      - run: echo "Hello, world!"
       - uses: actions/checkout@v4
