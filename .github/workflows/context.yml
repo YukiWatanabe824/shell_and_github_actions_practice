@@ -1,0 +1,20 @@
+name: Contexts
+on: push
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello, world!"
+      - uses: actions/checkout@v4
+      - run: echo "This is a context example"
+      - run: echo "github actor is ${{ github.actor }}"
+      - run: echo "github ref is ${{ github.ref }}"
+      - run: echo "github actions workflow id is ${{ github.run_id }}"
+      - run: echo "source branch is ${{ github.head_ref }}"
+      - run: echo "working directory is ${{ github.workspace }}"
+      - run: echo "repository name is ${{ github.repository }}"
+      - run: echo "repository owner is ${{ github.repository_owner }}"
+      - run: echo "this workflow trigger is ${{ github.event }}"
+      - run: echo "The current date and time is ${{ github.event.head_commit.timestamp }}"
+      - run: echo "The workflow name is ${{ github.workflow }}"
+      - run: echo "The event name is ${{ github.event_name }}"
