@@ -1,11 +1,11 @@
-name: schedule
-on:
-  schedule:
-    - cron: '*/15 * * * *' # Every 15 minutes
+# name: schedule
+# on:
+#   schedule:
+#     - cron: '*/15 * * * *' # Every 15 minutes
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - run: date
-      - run: echo "hello"
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - run: date
+#       - run: echo "hello"
