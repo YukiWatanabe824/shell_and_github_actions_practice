@@ -8,4 +8,5 @@ jobs:
         if: ${{ contains(github.run_id, '1') }}
       - run: echo "abcde"
       - run: exit 1
+      - run: echo "Hello again"
         if: ${{ failure() }}
