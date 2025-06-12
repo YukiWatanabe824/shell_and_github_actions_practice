@@ -1,6 +1,6 @@
 name: Github_output_&_Github_Env
 on: push
-jons:
+jobs:
   share:
     runs-on: ubuntu-latest
     steps:
