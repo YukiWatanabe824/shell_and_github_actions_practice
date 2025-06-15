@@ -9,3 +9,5 @@ jobs:
       - env:
           RESULT: ${{steps.source.outputs.result}}
         run: echo "${RESULT}"
+      - run: echo "TEST=hello" >> "${GITHUB_ENV}"
+      - run: echo "${TEST}"
